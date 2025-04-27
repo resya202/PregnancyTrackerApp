@@ -78,7 +78,9 @@ export default function DetailScreen({ route, navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>{mother.name}</Text>
       <Text style={styles.text}>Usia: {mother.age}</Text>
-      <Text style={styles.text}>Usia Kandungan: {mother.gestational_age}</Text>
+      <Text style={styles.text}>
+        Usia Kandungan (Minggu): {mother.gestational_age}
+      </Text>
       <Text style={styles.text}>Notes: {mother.notes || "-"}</Text>
       <Button
         mode="contained"

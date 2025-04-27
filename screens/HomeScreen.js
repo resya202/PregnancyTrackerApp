@@ -41,7 +41,7 @@ export default function HomeScreen({ navigation }) {
         renderItem={({ item }) => (
           <List.Item
             title={item.name}
-            description={`Usia: ${item.age}, Usia Kandungan: ${
+            description={`Usia: ${item.age}, Usia Kandungan (Minggu): ${
               item.gestational_age
             }, notes: ${item.notes || "-"}`}
             onPress={() => navigation.navigate("Detail", { id: item.id })}

@@ -35,7 +35,7 @@ export default function App() {
             <Stack.Screen
               name="Add"
               component={AddScreen}
-              options={{ title: "Tambah Ibu" }}
+              options={{ title: "Tambah/Edit Ibu" }}
             />
           </Stack.Navigator>
         </NavigationContainer>

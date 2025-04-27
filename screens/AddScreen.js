@@ -29,6 +29,7 @@ export default function AddScreen({ route, navigation }) {
   useEffect(() => {
     if (editId)
       getMotherById(editId, (m) => {
+        console.log(m);
         setName(m.name);
         setAge(String(m.age));
         setGestationalAge(m.gestational_age);
@@ -37,7 +38,12 @@ export default function AddScreen({ route, navigation }) {
   }, [editId]);
 
   const handleSave = () => {
-    const data = { name, age: parseInt(age, 10), gestational_age, notes };
+    const data = {
+      name,
+      age: parseInt(age, 10),
+      gestational_age: gestationalAge,
+      notes,
+    };
     const callback = () => navigation.navigate("Home");
     if (editId) updateMother(editId, data, callback);
     else addMother(data, callback);
@@ -66,9 +72,10 @@ export default function AddScreen({ route, navigation }) {
         placeholder="Masukkan usia ibu"
       />
       <TextInput
-        label="Usia Kandungan"
+        label="Usia Kandungan (Minggu)"
         value={gestationalAge}
         onChangeText={setGestationalAge}
+        keyboardType="numeric"
         style={styles.input}
         mode="outlined"
         placeholder="Masukkan Usia Kandungan"
