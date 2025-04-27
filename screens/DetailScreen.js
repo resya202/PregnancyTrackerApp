@@ -34,7 +34,8 @@ export default function DetailScreen({ route, navigation }) {
     >
       <Text variant="headlineSmall">{mother.name}</Text>
       <Text>Usia: {mother.age}</Text>
-      <Text>HPL: {mother.hpl}</Text>
+      <Text>HPL: {mother.gestational_age}</Text>
+      <Text>Notes: {mother.notes}</Text>
       <Button
         mode="contained"
         onPress={() => navigation.navigate("Add", { id })}

@@ -3,6 +3,11 @@
     "name": "PregnancyTrackerApp",
     "slug": "PregnancyTrackerApp",
     "version": "1.0.0",
-    "newArchEnabled": true
+    "newArchEnabled": true,
+    "extra": {
+      "eas": {
+        "projectId": "a3974dc7-1853-43a9-83c4-d29c058d180e"
+      }
+    }
   }
 }
