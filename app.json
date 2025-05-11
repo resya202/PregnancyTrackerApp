@@ -7,6 +7,22 @@
     "extra": {
       "eas": {
         "projectId": "a3974dc7-1853-43a9-83c4-d29c058d180e"
+      },
+      "googleWebClientId":    "YOUR_WEB_CLIENT_ID.apps.googleusercontent.com",
+      "googleIosClientId":    "YOUR_IOS_CLIENT_ID.apps.googleusercontent.com",
+      "googleAndroidClientId":"YOUR_ANDROID_CLIENT_ID.apps.googleusercontent.com"
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.pregnancytrackerapp",
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
       }
     }
   }
